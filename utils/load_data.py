@@ -20,7 +20,7 @@ def load_season(Spring = True, Winter = False):
     if Spring == True and Winter == False:
         
         for i in range(len(months)):
-            if months[i] in [6,8,9,11]:
+            if months[i] in [6,8,9]:
                 df = pd.read_csv(path[i])
                 df['Year'] = years[i]
                 df['Month'] = months[i]
